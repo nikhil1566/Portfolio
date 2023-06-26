@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="img/site.png" href="img/site.png">
+
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="container-header">
+        <header>
+            <div class="logo">
+                <a href="#">Nikhil</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#intro" onclick="seleccionar()">Intro</a></li>
+                    <li><a href="#About-me" onclick="seleccionar()">About Me</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">Portfolio</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION Intro -->
+    <section id="intro" class="intro">
+        <div class="container-banner">
+            <div class="container-img">
+                <img src="img/hero.jpg" alt="">
+            </div>
+            <h1><span style="color: #1CB698;">Nikhil</span> Singh</h1>
+            <h2>Frontend Developer</h2>
+            <div class="social">
+                <a href="https://docs.google.com/document/d/1OE3QhDUuRqzQflzUBDyzmYgGGgG_j50EX33noyu2QWY/export?format=pdf"><i class="fa-solid fa-download"></i></a>
+                <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/nikhil1566" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION About me -->
+    <section id="About-me" class="About-me">
+        <div class="container-section">
+            <h2>About Me</h2>
+            <p><span>Hello, I'm Nikhil Singh.</span> and I'm a highly motivated frontend developer known for my hardworking nature and rapid learning abilities. With a strong work ethic, I consistently strive for excellence in every project. As a fast learner, I quickly adapt to new technologies, staying ahead of the curve. With expertise in HTML, CSS, JavaScript, and frontend frameworks, I create engaging and user-friendly digital experiences.</p>
+
+            <div class="file">
+                <!-- Personal details -->
+                <div class="col">
+                    <h3>Personal Details</h3>
+                    <ul>
+                        <li>
+                            <strong>Date of Birth</strong>
+                            23-09-2000
+                        </li>
+                        <li>
+                            <strong>Gender</strong>
+                            Male 
+                        </li>
+                        <li>
+                            <strong>Father's Name</strong>
+                            Suresh Singh
+                        </li>
+                        <li>
+                            <strong>Language</strong>
+                            English and Hindi
+                        </li>
+                        <li>
+                            <strong>Nationality</strong>
+                            Indian
+                        </li>
+                    </ul>
+                </div>
+            <button style="height: 50px; width: 250px; margin-top: 90px;">
+                <a href="https://docs.google.com/document/d/1OE3QhDUuRqzQflzUBDyzmYgGGgG_j50EX33noyu2QWY/export?format=pdf" target="_blank" style="text-decoration: none; color: white; font-weight: 600;">Download CV</a>
+                 <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECTION  SKILLS -->
+    <section class="skills" id="skills">
+        <div class="container-section">
+            <h2>Skills</h2>
+            <div class="file">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    
+                        <div class="skill">
+                            <span>HTML & CSS</span>
+                            <div class="bar-skill">
+                                <div class="progress">
+                                    <span>96%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    
+                    
+                    <div class="skill">
+                        <span>React.Js</span>
+                        <div class="bar-skill">
+                            <div class="progress htmlcss">
+                                
+                                <span>15%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MORE -->
+                <div class="col">
+                    <h3 style="color: transparent;">More Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Material UI</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="container-section">
+            <h2>Curriculum</h2>
+            <div class="file">
+                <div class="col izquierda">
+                    <h3>Education</h3>
+                    <div class="item izq">
+                        <h4>10th</h4>
+                        <span class="casa">Army Public School</span>
+                        <span class="fecha">2016</span>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p> -->
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>+2</h4>
+                        <span class="casa">M. V. Convent Inter College</span>
+                        <span class="fecha">2017 - 2019</span>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p> -->
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>B-Tech</h4>
+                        <span class="casa">Chandigarh University</span>
+                        <span class="fecha">2019 - 2023</span>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p> -->
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">  
+                    <h3>Experience</h3>
+                    <div class="item der">
+                        <h4>Internship</h4>
+                        <span class="casa">Way To Code Technologies LLP</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <input type="checkbox" id="ch">
+                        <p>I started my internship journey with Way To Code Technologies, As a front-end developer,
+                            during my internship I worked on E-com projects
+                            </p> <br>
+                            <div class="content">
+                                <h4 style="color: #1CB698;">SLICK DEALS</h4>
+                                <p>This project is about to build website, where client can add products to promote
+                                    amazon, flipkart, etc products with 3 interface- <br>
+                                    <br>For Users where they can do signup/login, and can buy the product on some
+                                    discount then original product price
+                                    <br>For Moderator account where they can manage the product listing and users
+                                    account.
+                                    <br>For Admin panel with various features like managing the activities and tracking
+                                    Moderator/Users account with full CRUD operation. <br>
+                                    Website-<a href="https://slickdeals.net/" target="_blank" style="text-decoration: none; color: #1CB698;" >Slickdeals</a> <br> <br>
+                                    
+                                    <h4 style="font-weight: 600; text-decoration: underline;">My role during this project</h4>
+                                    <p>
+                                        Building the homepage UI on scratch using Material UI
+                                        Designing NavBar by using HTML, CSS, and JavaScript
+                                        Sign in/Sign out UI by using JavaScript.
+
+                                    </p>
+                                
+                                </p>
+                
+                                    <label for="ch">show less</label>
+                            </div>
+                            <label for="ch">show more</label>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Internship</h4>
+                        <span class="casa">Omegazero Tech</span>
+                        <span class="fecha">2023 - Present</span>
+                        <input type="checkbox" id="ch1">
+                        <p>I started my internship journey with Way To Code Technologies, As a front-end developer,
+                            during my internship I worked on E-com projects
+                            </p> <br>
+                            <div class="content1">
+                                <h4 style="color: #1CB698;">SLICK DEALS</h4>
+                                <p>This project is about to build website, where client can add products to promote
+                                    amazon, flipkart, etc products with 3 interface- <br>
+                                    <br>For Users where they can do signup/login, and can buy the product on some
+                                    discount then original product price
+                                    <br>For Moderator account where they can manage the product listing and users
+                                    account.
+                                    <br>For Admin panel with various features like managing the activities and tracking
+                                    Moderator/Users account with full CRUD operation. <br>
+                                    Website-<a href="https://slickdeals.net/" target="_blank" style="text-decoration: none; color: #1CB698;" >Slickdeals</a> <br> <br>
+                                    
+                                    <h4 style="font-weight: 600; text-decoration: underline;">My role during this project</h4>
+                                    <p>
+                                        Building the homepage UI on scratch using Material UI
+                                        Designing NavBar by using HTML, CSS, and JavaScript
+                                        Sign in/Sign out UI by using JavaScript.
+
+                                    </p>
+                                
+                                </p>
+                
+                                    <label for="ch1">show less</label>
+                            </div>
+                            <label for="ch1">show more</label>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="container-section">
+            <h2>Portfolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.png" alt="">
+                    <div class="overlay">
+                    <a href="https://chat.openai.com/chat" target="_blank" style="text-decoration: none; color: white;">
+                        <h3>HomePage</h3>
+                        <p>Fotografía</p>
+                    </a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.png" alt="">
+                    <div class="overlay">
+                    <a href="https://chat.openai.com/chat" target="_blank" style="text-decoration: none; color: white;">
+                        <h3>HomePage</h3>
+                        <p>Fotografía</p>
+                     </a>                        
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.png" alt="">
+                    <div class="overlay">
+                    <a href="https://chat.openai.com/chat" target="_blank" style="text-decoration: none; color: white;">
+                            <h3>HomePage</h3>
+                            <p>Fotografía</p>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION Contact -->
+    <section id="contacto" class="contacto">
+        <div class="container-section">
+            <h2>Contact</h2>
+            <div class="file">
+                <!-- Formulario -->
+                <div class="col">
+                        
+                    <h3>Name:<br> <span style="color: #1CB698;">Nikhil Kumar Singh</span></h3>
+                    <h3>Phone Number:<br> +91<a href="tel:+919696315949" style="color: #1CB698; text-decoration: none;">9696315949</a>
+                    </h3>
+                    <h3>Email Address:<br><a href="mailto:19bcs1566@gmail.com" target="_blank" style="text-decoration: none; color: #1CB698;">19bcs1566@gmail.com</a></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#intro" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="social">
+            <a href="https://docs.google.com/document/d/1OE3QhDUuRqzQflzUBDyzmYgGGgG_j50EX33noyu2QWY/export?format=pdf"><i class="fa-solid fa-download"></i></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/nikhil1566" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
